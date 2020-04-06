@@ -13,7 +13,7 @@ function createUpdatedCollection(collectionA, objectB) {
     }
     return accumulate;
   }, {});
-console.log(countMap);
+
   let collectionC = Object.keys(countMap).map(key => {
     return {key: key, count: countMap[key]};
   });
