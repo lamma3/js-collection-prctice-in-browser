@@ -2,10 +2,10 @@
 
 function createUpdatedCollection(collectionA, objectB) {
   let collectionC = [...collectionA];
-  collectionC.forEach(a => {
-    objectB.value.forEach(b => {
-      if (a.key === b) {
-        a.count--;
+  collectionC.forEach(itemC => {
+    objectB.value.forEach(itemB => {
+      if (itemC.key === itemB) {
+        itemC.count--;
       }
     });
   });
